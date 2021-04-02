@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <script src="index.js"></script>
+        <script src="jquery-3.5.1.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </head>
+    <body class="d-flex align-items-center justify-content-center" onload="startGame();">
+        <div id="container" class="container gameConatainer d-flex justify-content-center">
+            <div class="row gameRow">
+                <div class="col-6 leftGamePanel d-flex align-items-center justify-content-center">
+                    <div id="truck">
+                        <table class="truckLayout" id="truckLayout">
+                            <tr class="truckRow">
+                                <td class="truckCell" name="empty" id="0:0"></td><td  class="truckCell" name="empty" id="0:1"></td><td  class="truckCell" name="empty" id="0:2"></td>
+                            </tr>
+                            <tr class="truckRow">
+                                <td  class="truckCell" name="empty" id="1:0"></td><td  class="truckCell" name="empty" id="1:1"></td><td  class="truckCell" name="empty" id="1:2"></td>
+                            </tr>
+                            <tr class="truckRow">
+                                <td  class="truckCell" name="empty" id="2:0"></td><td  class="truckCell" name="empty" id="2:1"></td><td  class="truckCell" name="empty" id="2:2"></td>
+                            </tr>
+                            <tr class="truckRow">
+                                <td  class="truckCell" name="empty" id="3:0"></td><td  class="truckCell" name="empty" id="3:1"></td><td  class="truckCell" name="empty" id="3:2"></td>
+                            </tr>
+                            <tr class="truckRow">
+                                <td  class="truckCell" name="empty" id="4:0"></td><td  class="truckCell" name="empty" id="4:1"></td><td  class="truckCell" name="empty" id="4:2"></td>
+                            </tr>
+                            <tr class="truckRow">
+                                <td  class="truckCell" name="empty" id="5:0"></td><td  class="truckCell" name="empty" id="5:1"></td><td  class="truckCell" name="empty" id="5:2"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-6 rightGamePanel">
+                    <div class="col-12 hint">
+                        Załaduj paczki na paletę
+                    </div>
+                    <div class='buttonsDiv row d-flex'>
+                        <div class="col-6 d-flex justify-content-center align-items-center">
+                            <button type="button" class="buttons selectButton" onclick="finishMiniGame();">Jedziemy!</button>
+                        </div>
+                        <div class="col-6 d-flex justify-content-center align-items-center">
+                            <button type='button' class="buttons closeButton" onclick="terminateJob();">Anuluj</button>
+                        </div>
+                    </div>
+                    <div class="row" id="rightGamePanel"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

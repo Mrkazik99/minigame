@@ -1,0 +1,124 @@
+body {
+    width:100vw;
+    height:100vh;
+    margin:0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background: none;
+    background-color: transparent !important;
+    user-select: none;
+}
+
+#container{
+    width:100%;
+    height: 70vh;
+    margin:0;
+    background-color: rgba(90,90,90, 0.8);
+    border-radius:10px;
+    border: 5px solid black;
+}
+
+.rightGamePanel {
+    position:relative;
+    border-left: 5px solid black;
+}
+
+#rightGamePanel {
+    height:80%;
+    padding:10vh !important;
+}
+
+.gameRow {
+    width: 100%;
+}
+
+#truck {
+    height: 90%;
+    width: 70%;
+}
+
+.truckLayout {
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    background-image: url('images/paletasiema.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+}
+
+.truckLayout, .truckRow, .truckCell {
+    border: 3px solid white;
+    border-collapse: collapse;
+}
+
+.movable {
+    outline: 1px solid black;
+    position:absolute;
+    background-image: url('images/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width: 20px;
+    height: 20px; */
+}
+
+.moved {
+    position:absolute;
+    background-image: url('images/image.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 1px solid black;
+}
+
+.buttonsDiv {
+    position:absolute;
+    bottom:10px;
+    width:100%;
+    height:20%;
+}
+
+.buttons {
+    width: 10vh;
+    height: 5vh;
+    font-size: 1.8vh;
+}
+
+.selectButton{
+    color: #fff;
+    background-color: #2e2e2e;
+    border-color: #4e4e4e;
+    user-select: none;
+    transition: all 1s;
+}
+
+.closeButton{
+    color: #fff;
+    background-color: #2e2e2e;
+    border-color: #4e4e4e;
+    left:50%;
+    user-select: none;
+    transition: all 1s;
+}
+
+.closeButton:hover{
+    color: red;
+    border-radius: 1vh;
+}
+
+.selectButton:hover{
+  border-radius: 1vh;
+  color: limegreen;
+}
+
+.hint {
+    font-size:2vh;
+    width: 100%;
+    text-align:center;
+    color: white;
+    padding:5vh;
+    padding-bottom:0px;
+    font-family: "Arial Black", "Arial Bold", Gadget, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #000000, 0 0 5px #000000;
+}
